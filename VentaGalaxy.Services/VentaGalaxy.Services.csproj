@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http.Abstractions" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="8.0.6" />
+    <PackageReference Include="SendGrid" Version="9.29.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\VentaGalaxy.DataAccess\VentaGalaxy.DataAccess.csproj" />
+    <ProjectReference Include="..\VentaGalaxy.Entidades\VentaGalaxy.Entities.csproj" />
+    <ProjectReference Include="..\VentaGalaxy.Repositories\VentaGalaxy.Repositories.csproj" />
+    <ProjectReference Include="..\VentaGalaxy.Shared\VentaGalaxy.Shared.csproj" />
+  </ItemGroup>
+
+</Project>
